@@ -1,0 +1,22 @@
+--StoreItems list
+
+CREATE TABLE StoreItems (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO StoreItems VALUES (1, "Rubber Ball", 10, 5);
+INSERT INTO StoreItems VALUES (2, "Umbrella", 5, 20);
+INSERT INTO StoreItems VALUES (3, "Shoes", 20, 50);
+INSERT INTO StoreItems VALUES (4, "Hats", 50, 10);
+INSERT INTO StoreItems VALUES (5, "Pants", 10, 20);
+INSERT INTO StoreItems VALUES (6, "Deoderant", 50, 8);
+INSERT INTO StoreItems VALUES (7, "Books",100, 5);
+INSERT INTO StoreItems VALUES (8, "Manga", 20, 10);
+INSERT INTO StoreItems VALUES (9, "Tennis rackets", 10, 18);
+INSERT INTO StoreItems VALUES (10, "Shirts", 20, 15);
+INSERT INTO StoreItems VALUES (11, "Socks", 15, 10);
+INSERT INTO StoreItems VALUES (12, "Overalls", 10, 20);
+INSERT INTO StoreItems VALUES (13, "Big Hats", 5, 30);
+INSERT INTO StoreItems VALUES (14, "Small Hats", 3, 15);
+INSERT INTO StoreItems VALUES (15, "Tables", 31, 100);
+
+--display items ordered by price
+SELECT * FROM StoreItems ORDER BY price asc;
